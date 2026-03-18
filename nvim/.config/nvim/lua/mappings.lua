@@ -13,3 +13,5 @@ map("n", "<leader>rf", ":RunFile<CR>", { desc = "Run Current File" })
 map("n", "<leader>rp", ":RunProject<CR>", { desc = "Run Project" })
 map("n", "<leader>rc", ":RunClose<CR>", { desc = "Close Runner" })
 
+--  Toggle Markdown
+map("n", "<leader>mt", "<cmd>RenderMarkdown toggle<cr>", { desc = "Markdown Toggle" })
