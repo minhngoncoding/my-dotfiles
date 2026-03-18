@@ -7,4 +7,9 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>", {desc = "Exit Insert mode"})
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+-- Code Runner mappings
+map("n", "<leader>rr", ":RunCode<CR>", { desc = "Run Code" })
+map("n", "<leader>rf", ":RunFile<CR>", { desc = "Run Current File" })
+map("n", "<leader>rp", ":RunProject<CR>", { desc = "Run Project" })
+map("n", "<leader>rc", ":RunClose<CR>", { desc = "Close Runner" })
+
