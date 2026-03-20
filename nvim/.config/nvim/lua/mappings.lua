@@ -16,8 +16,5 @@ map("n", "<leader>rc", ":RunClose<CR>", { desc = "Close Runner" })
 --  Toggle Markdown
 map("n", "<leader>mt", "<cmd>RenderMarkdown toggle<cr>", { desc = "Markdown Toggle" })
 
--- Mini Surround
-map("n", "sa", "<cmd>lua MiniSurround.add('normal')<CR>", { desc = "Surround Add" })
-map("n", "sd", "<cmd>lua MiniSurround.delete()<CR>", { desc = "Surround Delete" })
-map("n", "sr", "<cmd>lua MiniSurround.replace()<CR>", { desc = "Surround Replace" })
-map("x", "sa", "<cmd>lua MiniSurround.add('visual')<CR>", { desc = "Surround Add" })
+-- Focus the tree specifically without toggling it
+map("n", "<leader>ft", ":NvimTreeFocus<CR>", { desc = "Focus NvimTree" })
