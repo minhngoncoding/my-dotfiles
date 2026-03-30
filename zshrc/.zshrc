@@ -64,6 +64,7 @@ setopt hist_find_no_dups
 
 # --- Yazi ---
 export EDITOR="nvim"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Change the current directory when exit Yazi
 function y() {
@@ -92,3 +93,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+. "$HOME/.local/share/../bin/env"
