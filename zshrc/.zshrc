@@ -48,6 +48,8 @@ alias ls='ls --color'
 alias vim='nvim'
 alias v='nvim'
 alias c='clear'
+alias wc='warp-cli connect'
+alias wd='warp-cli disconnect'
 
 #History
 HISTSIZE=5000
