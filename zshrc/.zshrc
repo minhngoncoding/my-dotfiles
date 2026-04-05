@@ -96,4 +96,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-. "$HOME/.local/share/../bin/env"
+# . "$HOME/.local/share/../bin/env"

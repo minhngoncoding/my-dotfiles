@@ -6,8 +6,17 @@
 local M = {}
 M.plugins = "plugins"
 
+--M.general = {
+  --n = {
+   -- ["<C-h>"] = {"<cmd> TmuxNavigateLeft<CR>", "window left"},
+    --["<C-l>"] = {"<cmd> TmuxNavigateRight<CR>", "window right"},
+    --["<C-k>"] = {"<cmd> TmuxNavigateUp<CR>", "window up"},
+    --["<C-j>"] = {"<cmd> TmuxNavigateDown<CR>", "window down"}
+  --}
+--}
+
 M.base46 = {
-	theme = "catppuccin",
+	theme = "kanagawa",
 
 	hl_override = {
 		Comment = { italic = true },
