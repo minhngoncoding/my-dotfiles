@@ -50,6 +50,9 @@ alias v='nvim'
 alias c='clear'
 alias wc='warp-cli connect'
 alias wd='warp-cli disconnect'
+alias ga="git add ."
+alias gs="git status -s"
+alias gc="git commit -m"
 
 #History
 HISTSIZE=5000
