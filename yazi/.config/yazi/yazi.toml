@@ -25,6 +25,9 @@ play = [
 open = [
     { run = 'xdg-open "$@"', orphan = true, desc = "Open" },
 ]
+extract = [
+	{ run = '7z x "$1" -o"${1%.*}" -mmt=on', desc = "Fast Extract", block = true }
+]
 
 # ------------------------------------------------------------------------------
 # OPEN RULES (The "Logic")
@@ -46,7 +49,10 @@ rules = [
     # Image
     { mime = "image/*", use = "open" },
     # Fallback
-    { name = "*", use = "open" }
+    { name = "*", use = "open" },
+    { name = "*.zip", use = "extract" },
+	  { name = "*.7z",  use = "extract" },
+	  { name = "*.rar", use = "extract" }
 ]
 
 # ------------------------------------------------------------------------------
