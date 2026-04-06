@@ -4,6 +4,14 @@ require("nvchad.mappings")
 vim.g.maplocalleader = ","
 local map = vim.keymap.set
 
+-- Force override NvChad's window mappings
+local opts = { noremap = true, silent = true, nowait = true }
+
+vim.keymap.set('n', '<C-h>', '<cmd>TmuxNavigateLeft<cr>', opts)
+vim.keymap.set('n', '<C-j>', '<cmd>TmuxNavigateDown<cr>', opts)
+vim.keymap.set('n', '<C-k>', '<cmd>TmuxNavigateUp<cr>', opts)
+vim.keymap.set('n', '<C-l>', '<cmd>TmuxNavigateRight<cr>', opts)
+
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>", { desc = "Exit Insert mode" })
 
