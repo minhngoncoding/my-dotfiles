@@ -49,6 +49,10 @@ download = [
 	{ run = "ya emit download %S",        desc = "Download" },
 ]
 
+
+edit_notebook = [
+{ run = 'uvx jupytext --sync "$1" && nvim "${1%.ipynb}.py"', block = true, desc = "Sync & Edit" }
+]
 [open]
 rules = [
 	# Folder
@@ -69,6 +73,7 @@ rules = [
 	{ mime = "vfs/{absent,stale}", use = "download" },
 	# Fallback
 	{ url = "*", use = [ "open", "reveal" ] },
+  { name = "*.ipynb", use = "edit_notebook" }
 ]
 
 

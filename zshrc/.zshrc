@@ -53,6 +53,7 @@ alias wd='warp-cli disconnect'
 alias ga="git add ."
 alias gs="git status -s"
 alias gc="git commit -m"
+alias cc="opencode"
 
 #History
 HISTSIZE=5000

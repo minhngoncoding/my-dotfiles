@@ -11,7 +11,7 @@ return {
 				repl_definition = {
 					python = {
 						-- You can use "ipython" or "jupyter-console"
-						command = { "ipython", "--no-autoindent" },
+						command = { "uv", "run", "ipython", "--no-confirm-exit" },
 						format = require("iron.fts.common").bracketed_paste,
 						block_dividers = { "# %%", "---" },
 					},
